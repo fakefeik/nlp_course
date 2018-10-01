@@ -81,3 +81,5 @@ week1_embeddings/cc.uk.300.vec
 week1_embeddings/quora.txt
 
 week2_classification/Train_rev1.csv
+
+week3_lm/arxivData.json
