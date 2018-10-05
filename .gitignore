@@ -83,3 +83,10 @@ week1_embeddings/quora.txt
 week2_classification/Train_rev1.csv
 
 week3_lm/arxivData.json
+
+week4_seq2seq/bpe_rules.en
+week4_seq2seq/bpe_rules.ru
+week4_seq2seq/train.bpe.en
+week4_seq2seq/train.bpe.ru
+week4_seq2seq/train.en
+week4_seq2seq/train.ru
