@@ -78,7 +78,7 @@ def read_parallel_corpus(path, has_alignments=False):
     "Load a parallel corpus from disk and tokenize."
     max_src_length, max_trg_length = 0, 0
     src_corpus, trg_corpus, alignments = [], [], [] if has_alignments else None
-    for line in open(path):
+    for line in open(path, encoding='utf8'):
         if has_alignments:
             src, trg, aligned = line.strip().split('\t')
         else:
@@ -105,6 +105,6 @@ def alignment_string(alignments):
     return ' '.join(align_strings)
 
 def write_aligned_corpus(aligned_corpus, suffix, src_lang='en', trg_lang='cs'):
-    out = open('%s-%s-wa.%s' % (src_lang, trg_lang, suffix), 'w')
+    out = open('%s-%s-wa.%s' % (src_lang, trg_lang, suffix), 'w', encoding='utf8')
     for src_tokens, trg_tokens, alignments in aligned_corpus:
         out.write('%s\t%s\t%s\n' % (' '.join(src_tokens), ' '.join(trg_tokens), alignment_string(alignments)))
