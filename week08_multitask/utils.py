@@ -8,7 +8,7 @@ import tensorflow as tf
 def read_conll(path, column_names=['word', 'pos', 'ne'], sep=' ', lower_words=False):
     """ Reads .conll data files specified for this assignment """
     sents = []
-    for sent_raw in open(path).read()[:-1].split('\n\n'):
+    for sent_raw in open(path, encoding='utf8').read()[:-1].split('\n\n'):
         sent = zip(*[row.split() for row in filter(len, sent_raw.split('\n'))])
         sent = map(' '.join, sent)
         sent = dict(zip(column_names, sent))

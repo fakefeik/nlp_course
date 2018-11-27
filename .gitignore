@@ -76,17 +76,31 @@ debian/files
 *.substvars
 *.debhelper.log
 
-week1_embeddings/cc.ru.300.vec
-week1_embeddings/cc.uk.300.vec
-week1_embeddings/quora.txt
+week01_embeddings/cc.ru.300.vec
+week01_embeddings/cc.uk.300.vec
+week01_embeddings/quora.txt
 
-week2_classification/Train_rev1.csv
+week02_classification/Train_rev1.csv
 
-week3_lm/arxivData.json
+week03_lm/arxivData.json
 
-week4_seq2seq/bpe_rules.en
-week4_seq2seq/bpe_rules.ru
-week4_seq2seq/train.bpe.en
-week4_seq2seq/train.bpe.ru
-week4_seq2seq/train.en
-week4_seq2seq/train.ru
+week04_seq2seq/bpe_rules.en
+week04_seq2seq/bpe_rules.ru
+week04_seq2seq/train.bpe.en
+week04_seq2seq/train.bpe.ru
+week04_seq2seq/train.en
+week04_seq2seq/train.ru
+
+week08_multitask/kaggle-train.conll
+week08_multitask/source-domain-test.conll
+week08_multitask/target-domain-monolingual.conll
+week08_multitask/target-domain-test.conll
+
+week09_da/bpe_rules.en
+week09_da/bpe_rules.ru
+week09_da/model-pretrained.npz
+week09_da/teacher.npz
+week09_da/tokens.en
+week09_da/tokens.ru
+week09_da/train.domain.en
+week09_da/train.domain.ru
