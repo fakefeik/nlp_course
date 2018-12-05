@@ -20,7 +20,7 @@ def build_dataset(path, tokenized=False, verbose=False, min_chars_sent=10,
     :param verbose: if True, displays progressbar
     :returns: [train, test] - each is a dataframe with (question, possible_answers, correct_answer_indices) as columns
     '''
-    data = json.load(open(path))['data']
+    data = json.load(open(path, encoding='utf8'))['data']
     dataset = []
     for row in (tqdm(data) if verbose else data):
         for paragraph_id, paragraph in enumerate(row['paragraphs']):

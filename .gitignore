@@ -104,3 +104,5 @@ week09_da/tokens.en
 week09_da/tokens.ru
 week09_da/train.domain.en
 week09_da/train.domain.ru
+
+week10_dialogue/squad-v2.0.json
